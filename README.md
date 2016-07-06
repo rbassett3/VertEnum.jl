@@ -33,7 +33,7 @@ julia> Pkg.clone("https://github.com/rbassett3/VertEnum.jl.git")
 In this example we'll use the vrep function to compute the generators
 of the polyhedron {(x,y): x >= 0, y >=0, x+y <=1}. By examination, we
 see that there are three generating vertices (0,0), (1,0), (0,1) and
-no generating rays.
+no generating rays. Let's double check this with the vrep function.
 
 The vrep function computes the generators of the polyhedron {x: Ax <=
 b} via the syntax
