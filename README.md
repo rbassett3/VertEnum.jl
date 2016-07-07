@@ -1,10 +1,13 @@
 # VertEnum.jl
 
-A Julia package for enumerating vertices of a polyhedra in Julia. More
+A [Julia](http://julialang.org/)
+package for enumerating vertices of a polyhedra in Julia. More
 specifically, this package allows to go from a hyperplane
 representation {x: Ax <= b} of a polyhedra, to a set of generating
-vertices and rays. It uses the python module PyCDDlib to interface
-with CDD, an implementation of the double description method in C.
+vertices and rays. It uses the python module
+[pycddlib](http://pycddlib.readthedocs.io/en/latest/quickstart.html)
+to interface with [cdd](https://www.inf.ethz.ch/personal/fukudak/cdd_home/),
+an implementation of the double description method in C.
 
 **Please note that this package is in its infancy! Occasional issues
 should be expected**
@@ -38,6 +41,7 @@ vertices, and the second contains generating rays. So we simply
 convert our polyhedron to this format and apply the function.
 
 ```julia
+julia> using VertEnum
 julia> A=[-1 0; 0 -1; 1 1]
 julia> b=[0; 0; 1]
 julia> (V,R)=vrep(A,b)
