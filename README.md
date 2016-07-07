@@ -2,8 +2,8 @@
 
 A [Julia](http://julialang.org/)
 package for enumerating vertices of a polyhedra in Julia. More
-specifically, this package allows to go from a hyperplane
-representation {x: Ax <= b} of a polyhedra, to a set of generating
+specifically, this package transforms a polyhedra from a hyperplane
+representation {x: Ax <= b} to a set of generating
 vertices and rays. It uses the python module
 [pycddlib](http://pycddlib.readthedocs.io/en/latest/quickstart.html)
 to interface with [cdd](https://www.inf.ethz.ch/personal/fukudak/cdd_home/),
