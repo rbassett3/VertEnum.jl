@@ -16,14 +16,7 @@ OS and python package manager. I won't attempt to provide directions
 for all possible configurations--a quick google search with your
 specifications will be much more fruitful.
 
-2. In Julia, install PyCall
-```julia 
-julia> Pkg.add("PyCall")
-```
-
-3. Clone this repository to your julia directory (~/.julia/v0.4/ for
-me on linux) using the commands
-
+2. In Julia, install the package using the command
 ```julia
 julia> Pkg.clone("https://github.com/rbassett3/VertEnum.jl.git")
 ```
